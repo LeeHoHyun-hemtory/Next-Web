@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import * as STC from "./inputContainer.styled";
 import Input from "@/component/Input";
@@ -36,18 +36,27 @@ const InputContainer = () => {
     router.back();
   };
 
+  useEffect(() => {
+    fetch("/api/post/getOnePost")
+      .then((res) => res.json())
+      .then((res) => {
+        setTitle(res.title);
+        setContent(res.content);
+      });
+  }, []);
+
   return (
     <STC.Container>
       <STC.TitleWrapper>
         <Text content="Title" color="black" fontSize="30px" />
 
-        <Input setVal={setTitle} />
+        <Input val={title} setVal={setTitle} />
       </STC.TitleWrapper>
 
       <STC.ContentWrapper>
         <Text content="Content" color="black" fontSize="30px" />
 
-        <Input setVal={setContent} />
+        <Input val={content} setVal={setContent} />
       </STC.ContentWrapper>
 
       <STC.BtnWrapper>
