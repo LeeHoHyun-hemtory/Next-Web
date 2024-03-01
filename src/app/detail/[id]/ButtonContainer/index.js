@@ -9,12 +9,11 @@ const index = () => {
   const params = useParams();
 
   const handleEdit = () => {
-    // router.push(`/edit/${params.id}`);
-    alert("준비중");
+    router.push(`/edit/${params.id}`);
   };
 
   const handleDelete = () => {
-    fetch("/api/deleteList", {
+    fetch("/api/post/deleteList", {
       method: "POST",
       body: JSON.stringify({ _id: params.id }),
     }).then((res) => {

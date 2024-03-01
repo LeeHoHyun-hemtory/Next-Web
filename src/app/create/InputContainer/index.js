@@ -13,7 +13,7 @@ const InputContainer = () => {
   const router = useRouter();
 
   const handleOnClick = () => {
-    fetch("/api/postList", {
+    fetch("/api/post/postList", {
       method: "POST",
       body: JSON.stringify({
         title,
@@ -31,13 +31,13 @@ const InputContainer = () => {
       <STC.TitleWrapper>
         <Text content="Title" color="black" fontSize="30px" />
 
-        <Input val={title} setVal={setTitle} />
+        <Input setVal={setTitle} />
       </STC.TitleWrapper>
 
       <STC.ContentWrapper>
         <Text content="Content" color="black" fontSize="30px" />
 
-        <Input val={content} setVal={setContent} />
+        <Input setVal={setContent} />
       </STC.ContentWrapper>
 
       <STC.BtnWrapper>
