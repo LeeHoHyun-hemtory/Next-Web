@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import * as STC from "./inputContainer.styled";
-import Input from "@/component/Input";
-import Text from "@/component/Text";
-import Button from "@/component/Button";
+import Input from "@/components/Input";
+import Text from "@/components/Text";
+import Button from "@/components/Button";
 
 const InputContainer = () => {
   const [title, setTitle] = useState("");

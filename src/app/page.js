@@ -1,5 +1,5 @@
 import * as STC from "./home.styled";
-import Text from "@/component/Text";
+import Text from "@/components/Text";
 
 export default async function Home() {
   return (

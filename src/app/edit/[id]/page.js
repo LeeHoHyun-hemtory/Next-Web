@@ -1,5 +1,5 @@
 import React from "react";
-import Text from "@/component/Text";
+import Text from "@/components/Text";
 import * as STC from "./edit.styled";
 import InputContainer from "./InputContainer";
 

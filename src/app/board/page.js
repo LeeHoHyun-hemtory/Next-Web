@@ -1,6 +1,6 @@
-import List from "@/component/List";
+import List from "@/components/List";
 import * as STC from "./board.styled";
-import { Text } from "@/component/Text/Text.styled";
+import { Text } from "@/components/Text/Text.styled";
 import AddButton from "./ButtonContainer";
 
 const Board = () => {

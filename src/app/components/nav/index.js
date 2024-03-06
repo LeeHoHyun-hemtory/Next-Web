@@ -11,6 +11,10 @@ const navMenu = [
     name: "Board",
     route: "/board",
   },
+  {
+    name: "Cards",
+    route: "/cards",
+  },
 ];
 
 const Nav = () => {

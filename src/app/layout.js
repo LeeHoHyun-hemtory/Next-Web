@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import Nav from "./component/nav";
+import Nav from "./components/nav";
 import "./globals.css";
 import StyledComponentsRegistry from "/util/registry";
 

@@ -2,7 +2,7 @@
 
 import { useRouter, useParams } from "next/navigation";
 import * as STC from "./buttonContainer.styled";
-import Button from "@/component/Button";
+import Button from "@/components/Button";
 
 const index = () => {
   const router = useRouter();

@@ -1,6 +1,6 @@
 import { connectDB } from "/util/database";
 import * as STC from "./contentContainer.styled";
-import Text from "@/component/Text";
+import Text from "@/components/Text";
 import { ObjectId } from "mongodb";
 
 const InputContainer = async ({ id }) => {

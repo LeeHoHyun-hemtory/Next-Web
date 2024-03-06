@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Button from "@/component/Button";
+import Button from "@/components/Button";
 
 const index = () => {
   const router = useRouter();
