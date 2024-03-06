@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import * as STC from "./inputContainer.styled";
 import Input from "@/components/Input";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 import Button from "@/components/Button";
 
 const InputContainer = () => {
@@ -37,7 +37,7 @@ const InputContainer = () => {
   };
 
   useEffect(() => {
-    fetch("/api/post/getOnePost")
+    fetch(`/api/post/getOnePost?id=${params.id}`)
       .then((res) => res.json())
       .then((res) => {
         setTitle(res.title);
@@ -48,33 +48,21 @@ const InputContainer = () => {
   return (
     <STC.Container>
       <STC.TitleWrapper>
-        <Text content="Title" color="black" fontSize="30px" />
+        <Txt content="Title" color="black" fontSize="30px" />
 
         <Input val={title} setVal={setTitle} />
       </STC.TitleWrapper>
 
       <STC.ContentWrapper>
-        <Text content="Content" color="black" fontSize="30px" />
+        <Txt content="Content" color="black" fontSize="30px" />
 
         <Input val={content} setVal={setContent} />
       </STC.ContentWrapper>
 
       <STC.BtnWrapper>
-        <Button
-          handleOnClick={handleUpdate}
-          content="수정"
-          color="black"
-          background="#bbb"
-          padding="10px 20px"
-        />
+        <Button handleOnClick={handleUpdate} content="수정" color="#000" />
 
-        <Button
-          handleOnClick={handleCancel}
-          content="취소"
-          color="black"
-          background="#bbb"
-          padding="10px 20px"
-        />
+        <Button handleOnClick={handleCancel} content="취소" color="#000" />
       </STC.BtnWrapper>
     </STC.Container>
   );

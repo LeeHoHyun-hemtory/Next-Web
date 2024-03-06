@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const client = await connectDB;
     const db = client.db("next-web");
     const result = await db.collection("post").findOne({
-      _id: new ObjectId("65ded08cac500fc22b486554"),
+      _id: new ObjectId(req.query.id),
     });
 
     res.status(200).json(result);
