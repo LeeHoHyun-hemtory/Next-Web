@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import * as STC from "./inputContainer.styled";
 import Input from "@/components/Input";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 import Button from "@/components/Button";
 
 const InputContainer = () => {
@@ -29,25 +29,19 @@ const InputContainer = () => {
   return (
     <STC.Container>
       <STC.TitleWrapper>
-        <Text content="Title" color="black" fontSize="30px" />
+        <Txt content="Title" color="black" fontSize="30px" />
 
         <Input setVal={setTitle} />
       </STC.TitleWrapper>
 
       <STC.ContentWrapper>
-        <Text content="Content" color="black" fontSize="30px" />
+        <Txt content="Content" color="black" fontSize="30px" />
 
         <Input setVal={setContent} />
       </STC.ContentWrapper>
 
       <STC.BtnWrapper>
-        <Button
-          handleOnClick={handleOnClick}
-          content="추가"
-          color="black"
-          background="#bbb"
-          padding="10px 20px"
-        />
+        <Button handleOnClick={handleOnClick} content="추가" color="black" />
       </STC.BtnWrapper>
     </STC.Container>
   );

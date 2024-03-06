@@ -10,15 +10,7 @@ const index = () => {
     router.push("/create");
   };
 
-  return (
-    <Button
-      handleOnClick={handleOnClick}
-      content="추가"
-      color="#fff"
-      background="#bbb"
-      padding="10px 20px"
-    />
-  );
+  return <Button handleOnClick={handleOnClick} content="추가" color="#000" />;
 };
 
 export default index;

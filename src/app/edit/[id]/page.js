@@ -1,5 +1,5 @@
 import React from "react";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 import * as STC from "./edit.styled";
 import InputContainer from "./InputContainer";
 
@@ -7,7 +7,7 @@ const Create = () => {
   return (
     <STC.Container>
       <STC.Top>
-        <Text content="Edit" color="black" fontSize="50px" />
+        <Txt content="Edit" color="black" fontSize="50px" />
       </STC.Top>
 
       <InputContainer />

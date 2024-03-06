@@ -1,5 +1,5 @@
 import React from "react";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 import * as STC from "./detail.styled";
 import ContentContainer from "./ContentContainer";
 import ButtonContainer from "./ButtonContainer";
@@ -8,7 +8,7 @@ const Create = ({ params }) => {
   return (
     <STC.Container>
       <STC.Top>
-        <Text content="Content" color="black" fontSize="50px" />
+        <Txt content="Content" color="black" fontSize="50px" />
       </STC.Top>
 
       <ContentContainer id={params.id} />

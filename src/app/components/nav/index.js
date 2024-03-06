@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import * as STC from "./nav.styled";
 
 const navMenu = [

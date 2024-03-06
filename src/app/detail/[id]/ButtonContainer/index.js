@@ -25,21 +25,9 @@ const index = () => {
 
   return (
     <STC.Container>
-      <Button
-        handleOnClick={handleEdit}
-        content="수정"
-        color="#fff"
-        background="#bbb"
-        padding="10px 20px"
-      />
+      <Button handleOnClick={handleEdit} content="수정" color="#000" />
 
-      <Button
-        handleOnClick={handleDelete}
-        content="삭제"
-        color="#fff"
-        background="#bbb"
-        padding="10px 20px"
-      />
+      <Button handleOnClick={handleDelete} content="삭제" color="#000" />
     </STC.Container>
   );
 };

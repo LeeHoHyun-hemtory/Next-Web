@@ -1,21 +1,8 @@
 import * as STC from "./Button.styled";
 
-const Button = ({
-  handleOnClick,
-  content,
-  color,
-  background,
-  padding,
-  border,
-}) => {
+const Button = ({ handleOnClick, content, color, border }) => {
   return (
-    <STC.Button
-      onClick={handleOnClick}
-      color={color}
-      background={background}
-      padding={padding}
-      border={border}
-    >
+    <STC.Button onClick={handleOnClick} color={color} border={border}>
       {content}
     </STC.Button>
   );

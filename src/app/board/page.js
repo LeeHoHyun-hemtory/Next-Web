@@ -1,15 +1,15 @@
 import List from "@/components/List";
 import * as STC from "./board.styled";
-import { Text } from "@/components/Text/Text.styled";
+import Txt from "@/components/Txt";
 import AddButton from "./ButtonContainer";
 
 const Board = () => {
   return (
     <STC.Container>
       <STC.Top>
-        <Text color="black" fontSize="50px">
+        <Txt color="black" fontSize="50px">
           Board
-        </Text>
+        </Txt>
 
         <STC.BtnWrapper>
           <AddButton />

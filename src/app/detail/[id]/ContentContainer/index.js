@@ -1,6 +1,6 @@
 import { connectDB } from "/util/database";
 import * as STC from "./contentContainer.styled";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 import { ObjectId } from "mongodb";
 
 const InputContainer = async ({ id }) => {
@@ -11,18 +11,18 @@ const InputContainer = async ({ id }) => {
   return (
     <STC.Container>
       <STC.TitleWrapper>
-        <Text content="Title" color="#000" fontSize="30px" />
+        <Txt content="Title" color="#000" fontSize="30px" />
 
         <STC.TextWrapper>
-          <Text content={result.title} color="#000" fontSize="15px" />
+          <Txt content={result.title} color="#000" fontSize="15px" />
         </STC.TextWrapper>
       </STC.TitleWrapper>
 
       <STC.ContentWrapper>
-        <Text content="Content" color="#000" fontSize="30px" />
+        <Txt content="Content" color="#000" fontSize="30px" />
 
         <STC.TextWrapper>
-          <Text content={result.content} color="#000" fontSize="15px" />
+          <Txt content={result.content} color="#000" fontSize="15px" />
         </STC.TextWrapper>
       </STC.ContentWrapper>
     </STC.Container>
