@@ -1,10 +1,10 @@
 import * as STC from "./home.styled";
-import Text from "@/components/Text";
+import Txt from "@/components/Txt";
 
 export default async function Home() {
   return (
     <STC.Container>
-      <Text content="Home" color="#000" fontSize="50px" />
+      <Txt content="Home" color="#000" fontSize="50px" />
     </STC.Container>
   );
 }
